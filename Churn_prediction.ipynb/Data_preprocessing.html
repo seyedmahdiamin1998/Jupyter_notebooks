@@ -14580,7 +14580,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3>>> Import data</h3>
+<blockquote><h3>Import data</h3>
+</blockquote>
+
 </div>
 </div>
 </div>
@@ -14594,7 +14596,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'Churn_prediction.csv'</span><span class="p">)</span>
-<span class="k">del</span> <span class="n">df</span><span class="p">[</span><span class="s1">'customerID'</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14602,6 +14603,59 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(7043, 21)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>-- because we have a lot of independent variable, I display the transpose  of data frame</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -14659,6 +14713,14 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <th>customerID</th>
+      <td>7590-VHVEG</td>
+      <td>5575-GNVDE</td>
+      <td>3668-QPYBK</td>
+      <td>7795-CFOCW</td>
+      <td>9237-HQITU</td>
+    </tr>
     <tr>
       <th>gender</th>
       <td>Female</td>
@@ -14838,47 +14900,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>(7043, 20)</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
 </pre></div>
 
@@ -14903,7 +14924,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>gender               object
+<pre>customerID           object
+gender               object
 SeniorCitizen         int64
 Partner              object
 Dependents           object
@@ -14932,6 +14954,53 @@ dtype: object</pre>
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<blockquote><h3>Data preprocessing</h3>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>-- Here we have some problems:</p>
+<ul>
+<li>We dont need customerID column           </li>
+<li>TotalCharges should be a numeric variable</li>
+<li>All the string values or column name should be lower case or replace whitespace with _</li>
+<li>Make dependent variable to number</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">df</span><span class="p">[</span><span class="s1">'customerID'</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -14949,17 +15018,6 @@ dtype: object</pre>
 </div>
 </div>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3>>> Make string values lower case and replace whitespace by _ </h3>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -14989,6 +15047,39 @@ dtype: object</pre>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">churn</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">churn</span> <span class="o">==</span> <span class="s1">'yes'</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>specify categorical and numerical columns</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">categorical</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'gender'</span><span class="p">,</span> <span class="s1">'seniorcitizen'</span><span class="p">,</span> <span class="s1">'partner'</span><span class="p">,</span> <span class="s1">'dependents'</span><span class="p">,</span>
+               <span class="s1">'phoneservice'</span><span class="p">,</span> <span class="s1">'multiplelines'</span><span class="p">,</span> <span class="s1">'internetservice'</span><span class="p">,</span>
+               <span class="s1">'onlinesecurity'</span><span class="p">,</span> <span class="s1">'onlinebackup'</span><span class="p">,</span> <span class="s1">'deviceprotection'</span><span class="p">,</span>
+               <span class="s1">'techsupport'</span><span class="p">,</span> <span class="s1">'streamingtv'</span><span class="p">,</span> <span class="s1">'streamingmovies'</span><span class="p">,</span>
+               <span class="s1">'contract'</span><span class="p">,</span> <span class="s1">'paperlessbilling'</span><span class="p">,</span> <span class="s1">'paymentmethod'</span><span class="p">]</span>
+<span class="n">numerical</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'tenure'</span><span class="p">,</span> <span class="s1">'monthlycharges'</span><span class="p">,</span> <span class="s1">'totalcharges'</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15231,8 +15322,63 @@ dtype: object</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><h3>>> Missing data</h3></p>
-<p>We don't have missing values, Thank god :)</p>
+<p>remove duplicate observations</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'We have </span><span class="si">{0}</span><span class="s1"> duplicate observation'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()))</span>
+<span class="c1"># drop them</span>
+<span class="n">df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Now we have </span><span class="si">{0}</span><span class="s1"> duplicate observation'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>We have 22 duplicate observation
+Now we have 0 duplicate observation
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Check missing values</p>
+
 </div>
 </div>
 </div>
@@ -15304,10 +15450,58 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3>>> Duplicate values</h3>
+<blockquote><h3>Finally we create a function for data preprocessing </h3>
+</blockquote>
+
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">data_preprocessing</span><span class="p">(</span><span class="n">dataset</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'customerID'</span><span class="p">,</span><span class="s1">'gender'</span><span class="p">,</span><span class="s1">'SeniorCitizen'</span><span class="p">,</span>
+                <span class="s1">'Partner'</span><span class="p">,</span><span class="s1">'Dependents'</span><span class="p">,</span><span class="s1">'tenure'</span><span class="p">,</span><span class="s1">'PhoneService'</span><span class="p">,</span>
+                <span class="s1">'MultipleLines'</span><span class="p">,</span><span class="s1">'InternetService'</span><span class="p">,</span><span class="s1">'OnlineSecurity'</span><span class="p">,</span>
+                <span class="s1">'OnlineBackup'</span><span class="p">,</span><span class="s1">'DeviceProtection'</span><span class="p">,</span><span class="s1">'TechSupport'</span><span class="p">,</span>
+                <span class="s1">'StreamingTV'</span><span class="p">,</span><span class="s1">'StreamingMovies'</span><span class="p">,</span><span class="s1">'Contract'</span><span class="p">,</span>
+                <span class="s1">'PaperlessBilling'</span><span class="p">,</span><span class="s1">'PaymentMethod'</span><span class="p">,</span>
+                <span class="s1">'MonthlyCharges'</span><span class="p">,</span><span class="s1">'TotalCharges'</span><span class="p">,</span><span class="s1">'Churn'</span><span class="p">]</span>
+    <span class="c1"># create columns not exist</span>
+    <span class="n">notImported</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">columns</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">))</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">notImported</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">{0}</span><span class="s2">, column(s) don't(doesn't) exist"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">notImported</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'!!! please enter this column first !!!'</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+            
+        <span class="c1"># make TotalCharges numeric                  </span>
+        <span class="n">df</span><span class="p">[</span><span class="s1">'TotalCharges'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'TotalCharges'</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">'coerce'</span><span class="p">)</span>
+        <span class="n">df</span><span class="p">[</span><span class="s1">'TotalCharges'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'TotalCharges'</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="c1"># prepare string variables</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">' '</span><span class="p">,</span><span class="s1">'_'</span><span class="p">)</span>
+        <span class="n">string_columns</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span><span class="o">==</span><span class="s1">'O'</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">string_columns</span><span class="p">:</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">' '</span><span class="p">,</span><span class="s1">'_'</span><span class="p">)</span>
+        <span class="c1"># make dependent variable numeric</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">churn</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">churn</span> <span class="o">==</span> <span class="s1">'yes'</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+        <span class="c1"># drop duplicates</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    
+        <span class="k">return</span> <span class="n">df</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15316,10 +15510,9 @@ dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'We have </span><span class="si">{0}</span><span class="s1"> duplicate observation'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()))</span>
-<span class="c1"># drop them</span>
-<span class="n">df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Now we have </span><span class="si">{0}</span><span class="s1"> duplicate observation'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'Churn_prediction.csv'</span><span class="p">)</span>
+<span class="c1"># df.drop('Churn', axis=1,inplace=True)</span>
+<span class="n">data_preprocessing</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
 </pre></div>
 
      </div>
@@ -15337,74 +15530,563 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>We have 22 duplicate observation
-Now we have 0 duplicate observation
-</pre>
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>...</th>
+      <th>7033</th>
+      <th>7034</th>
+      <th>7035</th>
+      <th>7036</th>
+      <th>7037</th>
+      <th>7038</th>
+      <th>7039</th>
+      <th>7040</th>
+      <th>7041</th>
+      <th>7042</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>customerid</th>
+      <td>7590-vhveg</td>
+      <td>5575-gnvde</td>
+      <td>3668-qpybk</td>
+      <td>7795-cfocw</td>
+      <td>9237-hqitu</td>
+      <td>9305-cdskc</td>
+      <td>1452-kiovk</td>
+      <td>6713-okomc</td>
+      <td>7892-pookp</td>
+      <td>6388-tabgu</td>
+      <td>...</td>
+      <td>9767-fflem</td>
+      <td>0639-tsiqw</td>
+      <td>8456-qdavc</td>
+      <td>7750-eyxwz</td>
+      <td>2569-wgero</td>
+      <td>6840-resvb</td>
+      <td>2234-xaduh</td>
+      <td>4801-jzazl</td>
+      <td>8361-ltmkd</td>
+      <td>3186-ajiek</td>
+    </tr>
+    <tr>
+      <th>gender</th>
+      <td>female</td>
+      <td>male</td>
+      <td>male</td>
+      <td>male</td>
+      <td>female</td>
+      <td>female</td>
+      <td>male</td>
+      <td>female</td>
+      <td>female</td>
+      <td>male</td>
+      <td>...</td>
+      <td>male</td>
+      <td>female</td>
+      <td>male</td>
+      <td>female</td>
+      <td>female</td>
+      <td>male</td>
+      <td>female</td>
+      <td>female</td>
+      <td>male</td>
+      <td>male</td>
+    </tr>
+    <tr>
+      <th>seniorcitizen</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>partner</th>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>...</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <th>dependents</th>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>...</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <th>tenure</th>
+      <td>1</td>
+      <td>34</td>
+      <td>2</td>
+      <td>45</td>
+      <td>2</td>
+      <td>8</td>
+      <td>22</td>
+      <td>10</td>
+      <td>28</td>
+      <td>62</td>
+      <td>...</td>
+      <td>38</td>
+      <td>67</td>
+      <td>19</td>
+      <td>12</td>
+      <td>72</td>
+      <td>24</td>
+      <td>72</td>
+      <td>11</td>
+      <td>4</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <th>phoneservice</th>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>...</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <th>multiplelines</th>
+      <td>no_phone_service</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no_phone_service</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no_phone_service</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>...</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no_phone_service</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no_phone_service</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <th>internetservice</th>
+      <td>dsl</td>
+      <td>dsl</td>
+      <td>dsl</td>
+      <td>dsl</td>
+      <td>fiber_optic</td>
+      <td>fiber_optic</td>
+      <td>fiber_optic</td>
+      <td>dsl</td>
+      <td>fiber_optic</td>
+      <td>dsl</td>
+      <td>...</td>
+      <td>fiber_optic</td>
+      <td>fiber_optic</td>
+      <td>fiber_optic</td>
+      <td>dsl</td>
+      <td>no</td>
+      <td>dsl</td>
+      <td>fiber_optic</td>
+      <td>dsl</td>
+      <td>fiber_optic</td>
+      <td>fiber_optic</td>
+    </tr>
+    <tr>
+      <th>onlinesecurity</th>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>...</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no_internet_service</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <th>onlinebackup</th>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>...</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no_internet_service</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <th>deviceprotection</th>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>...</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no_internet_service</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <th>techsupport</th>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>...</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no_internet_service</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <th>streamingtv</th>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>...</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no_internet_service</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <th>streamingmovies</th>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>...</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no_internet_service</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <th>contract</th>
+      <td>month-to-month</td>
+      <td>one_year</td>
+      <td>month-to-month</td>
+      <td>one_year</td>
+      <td>month-to-month</td>
+      <td>month-to-month</td>
+      <td>month-to-month</td>
+      <td>month-to-month</td>
+      <td>month-to-month</td>
+      <td>one_year</td>
+      <td>...</td>
+      <td>month-to-month</td>
+      <td>month-to-month</td>
+      <td>month-to-month</td>
+      <td>one_year</td>
+      <td>two_year</td>
+      <td>one_year</td>
+      <td>one_year</td>
+      <td>month-to-month</td>
+      <td>month-to-month</td>
+      <td>two_year</td>
+    </tr>
+    <tr>
+      <th>paperlessbilling</th>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>...</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <th>paymentmethod</th>
+      <td>electronic_check</td>
+      <td>mailed_check</td>
+      <td>mailed_check</td>
+      <td>bank_transfer_(automatic)</td>
+      <td>electronic_check</td>
+      <td>electronic_check</td>
+      <td>credit_card_(automatic)</td>
+      <td>mailed_check</td>
+      <td>electronic_check</td>
+      <td>bank_transfer_(automatic)</td>
+      <td>...</td>
+      <td>credit_card_(automatic)</td>
+      <td>credit_card_(automatic)</td>
+      <td>bank_transfer_(automatic)</td>
+      <td>electronic_check</td>
+      <td>bank_transfer_(automatic)</td>
+      <td>mailed_check</td>
+      <td>credit_card_(automatic)</td>
+      <td>electronic_check</td>
+      <td>mailed_check</td>
+      <td>bank_transfer_(automatic)</td>
+    </tr>
+    <tr>
+      <th>monthlycharges</th>
+      <td>29.85</td>
+      <td>56.95</td>
+      <td>53.85</td>
+      <td>42.3</td>
+      <td>70.7</td>
+      <td>99.65</td>
+      <td>89.1</td>
+      <td>29.75</td>
+      <td>104.8</td>
+      <td>56.15</td>
+      <td>...</td>
+      <td>69.5</td>
+      <td>102.95</td>
+      <td>78.7</td>
+      <td>60.65</td>
+      <td>21.15</td>
+      <td>84.8</td>
+      <td>103.2</td>
+      <td>29.6</td>
+      <td>74.4</td>
+      <td>105.65</td>
+    </tr>
+    <tr>
+      <th>totalcharges</th>
+      <td>29.85</td>
+      <td>1889.5</td>
+      <td>108.15</td>
+      <td>1840.75</td>
+      <td>151.65</td>
+      <td>820.5</td>
+      <td>1949.4</td>
+      <td>301.9</td>
+      <td>3046.05</td>
+      <td>3487.95</td>
+      <td>...</td>
+      <td>2625.25</td>
+      <td>6886.25</td>
+      <td>1495.1</td>
+      <td>743.3</td>
+      <td>1419.4</td>
+      <td>1990.5</td>
+      <td>7362.9</td>
+      <td>346.45</td>
+      <td>306.6</td>
+      <td>6844.5</td>
+    </tr>
+    <tr>
+      <th>churn</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>21 rows × 7043 columns</p>
 </div>
 </div>
 
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3>>> Split dataset to training set and test set</h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="n">df_train</span><span class="p">,</span> <span class="n">df_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">666</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"df_train shape: </span><span class="si">{0}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">df_train</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"df_test shape: </span><span class="si">{0}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">df_test</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
-
-<span class="n">y_train</span> <span class="o">=</span> <span class="n">df_train</span><span class="p">[</span><span class="s1">'churn'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-<span class="n">y_test</span> <span class="o">=</span> <span class="n">df_test</span><span class="p">[</span><span class="s1">'churn'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-
-<span class="k">del</span> <span class="n">df_train</span><span class="p">[</span><span class="s1">'churn'</span><span class="p">],</span> <span class="n">df_test</span><span class="p">[</span><span class="s1">'churn'</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>df_train shape: (5616, 20)
-df_test shape: (1405, 20)
-</pre>
-</div>
 </div>
 
 </div>

@@ -1,0 +1,16 @@
+contract_month-to-month
+contract_one_year
+contract_two_year
+onlinesecurity_no
+onlinesecurity_no_internet_service
+onlinesecurity_yes
+techsupport_no
+techsupport_no_internet_service
+techsupport_yes
+internetservice_dsl
+internetservice_fiber_optic
+internetservice_no
+tenure
+monthlycharges
+totalcharges
+churn

@@ -13,4 +13,3 @@ internetservice_no
 tenure
 monthlycharges
 totalcharges
-churn

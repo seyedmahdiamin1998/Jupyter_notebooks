@@ -1,0 +1,5 @@
+col,uniques
+contract,"month-to-month,one_year,two_year"
+onlinesecurity,"no,no_internet_service,yes"
+techsupport,"no,yes,no_internet_service"
+internetservice,"dsl,fiber_optic,no"
